@@ -108,7 +108,8 @@ section {
 	table{
 		margin: 0 auto;
 		border-collapse: collapse;
-		margin-top: 3em;
+		margin-top: 2em;
+		margin-bottom: 1em;
 		width: 60%;
 
 		th, td {
@@ -158,4 +159,39 @@ footer {
 	.map {
 		float: right;
 	}
+}
+
+@media screen and (max-width: 970px) {
+	section {
+		padding: 1em 5em;
+	}
+
+	.intro {
+		padding: 1em;
+
+		h1 {
+			width: 90%;
+		}
+	}
+
+	.catalog {
+		.column {
+			width: 50%;
+		}
+	}
+
+	.pricing {
+		table {
+			width: 80%
+		}
+	}
+
+	footer {
+		text-align: center;
+		address,
+		.map {
+			float: none;
+		}
+	}
+
 }

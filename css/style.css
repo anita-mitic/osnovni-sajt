@@ -89,7 +89,8 @@ section {
 .pricing table {
   margin: 0 auto;
   border-collapse: collapse;
-  margin-top: 3em;
+  margin-top: 2em;
+  margin-bottom: 1em;
   width: 60%; }
   .pricing table th, .pricing table td {
     padding: 1em; }
@@ -124,5 +125,26 @@ footer {
     float: left; }
   footer .map {
     float: right; }
+
+@media screen and (max-width: 970px) {
+  section {
+    padding: 1em 5em; }
+
+  .intro {
+    padding: 1em; }
+    .intro h1 {
+      width: 90%; }
+
+  .catalog .column {
+    width: 50%; }
+
+  .pricing table {
+    width: 80%; }
+
+  footer {
+    text-align: center; }
+    footer address,
+    footer .map {
+      float: none; } }
 
 /*# sourceMappingURL=style.css.map */
