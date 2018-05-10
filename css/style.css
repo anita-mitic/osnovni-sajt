@@ -11,7 +11,8 @@ section {
   section h2 {
     color: #797979;
     text-align: center;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    padding: 2em; }
 
 .logo {
   font-size: 2em;
@@ -62,8 +63,7 @@ section {
     font-weight: normal; }
 
 .catalog {
-  background: #f0f0f0;
-  margin-bottom: 2em; }
+  background: #f0f0f0; }
   .catalog:before, .catalog:after {
     content: "";
     display: table; }
@@ -105,5 +105,24 @@ section {
       background: #e42b15; }
   .pricing table thead {
     background: #ff3720; }
+
+footer {
+  width: 100%;
+  padding: 2em 10em;
+  background: #000; }
+  footer:before, footer:after {
+    content: "";
+    display: table; }
+  footer:after {
+    clear: both; }
+  footer .logo {
+    font-size: 1em;
+    display: block;
+    border-bottom: 1px solid #ff3720;
+    margin-bottom: 2em; }
+  footer address {
+    float: left; }
+  footer .map {
+    float: right; }
 
 /*# sourceMappingURL=style.css.map */

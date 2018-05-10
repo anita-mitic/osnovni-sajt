@@ -11,6 +11,7 @@ section {
 		color: $main_text_color;
 		text-align: center;
 		text-transform: uppercase;
+		padding: 2em;
 	}
 }
 
@@ -78,7 +79,6 @@ section {
 
 .catalog {
 	background: $grey_background;
-	margin-bottom: 2em;
 	@include clearfix;
 	.column {
 		float: left;
@@ -135,5 +135,27 @@ section {
 		thead {
 			background: $main_red;
 		}
+	}
+}
+
+footer {
+	width: 100%;
+	padding: 2em 10em;
+	background: #000;
+	@include clearfix;
+
+	.logo {
+		font-size: 1em;
+		display: block;
+		border-bottom: 1px solid $main_red;
+		margin-bottom: 2em;
+	}
+
+	address {
+		float: left;
+	}
+
+	.map {
+		float: right;
 	}
 }
