@@ -3,9 +3,75 @@
 
 @include main;
 
-header {
+section {
 	width: 100%;
-	height: 50em;
-	background: url('../slike/background.jpg');
+	padding: 2em 10em;
+
+	h2 {
+		color: $main_text_color;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+
+.logo {
+	font-size: 2em;
+	font-weight: bold;
+	font-family: $logo-font;
+	span {
+		color: $main-red;
+	}
+}
+
+.intro {
+
+	width: 100vw;
+	height: 100vh;
+	background: url(../slike/background.jpg);
 	background-size: cover;
+
+	header {
+		background: #fff;
+		@include clearfix;
+		padding: 0.5em;
+	}
+
+	.logo {
+		float: left;
+	}
+
+	nav {
+		float: right;
+		ul {
+			list-style: none;
+			li{
+				display: inline-block;
+				margin-left: 1em;
+				line-height: 3em;
+				text-transform: uppercase;
+				a {
+					text-decoration: none;
+					&:hover {
+						color: #000;
+					}
+				}
+			}
+		}
+	}
+
+	h1 {
+		color: #fff;
+		font-size: 3em;
+		text-align: center;
+		border-bottom: 1px solid $main_red;
+		width: 60%;
+		margin: 20% auto 0;
+		font-weight: normal;
+	}
+
+	h3 {
+		color: #fff;
+		text-align: center;
+		font-weight: normal;
+	}
 }
