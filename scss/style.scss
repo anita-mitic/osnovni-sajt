@@ -75,3 +75,30 @@ section {
 		font-weight: normal;
 	}
 }
+
+.catalog {
+	background: $grey_background;
+	@include clearfix;
+	.column {
+		float: left;
+		width: 25%;
+		padding: 0.5em;
+		text-align: center;
+		img {
+			width: 100%;
+		}
+		a {
+			background: $main_red;
+			color: #fff;
+			padding: 0.5em 1em;
+			text-decoration: none;
+			margin-top: 1em;
+			display: inline-block;
+
+			&:hover {
+				background: #000;
+			}
+
+		}
+	}
+}
