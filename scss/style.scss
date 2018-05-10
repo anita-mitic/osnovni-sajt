@@ -78,6 +78,7 @@ section {
 
 .catalog {
 	background: $grey_background;
+	margin-bottom: 2em;
 	@include clearfix;
 	.column {
 		float: left;
@@ -99,6 +100,40 @@ section {
 				background: #000;
 			}
 
+		}
+	}
+}
+
+.pricing {
+	table{
+		margin: 0 auto;
+		border-collapse: collapse;
+		margin-top: 3em;
+		width: 60%;
+
+		th, td {
+			padding: 1em;
+
+		}
+
+		td {
+			border-bottom: 1px solid $main_text_color;
+			text-align: center;
+			&:first-child {
+				background: $grey_background;
+				font-weight: bold;
+			}
+		}
+
+		th {
+			color: #fff;
+			&:first-child {
+				background: $red_dark;
+			}
+		}
+
+		thead {
+			background: $main_red;
 		}
 	}
 }

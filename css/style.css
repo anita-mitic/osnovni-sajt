@@ -62,7 +62,8 @@ section {
     font-weight: normal; }
 
 .catalog {
-  background: #f0f0f0; }
+  background: #f0f0f0;
+  margin-bottom: 2em; }
   .catalog:before, .catalog:after {
     content: "";
     display: table; }
@@ -84,5 +85,25 @@ section {
       display: inline-block; }
       .catalog .column a:hover {
         background: #000; }
+
+.pricing table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-top: 3em;
+  width: 60%; }
+  .pricing table th, .pricing table td {
+    padding: 1em; }
+  .pricing table td {
+    border-bottom: 1px solid #797979;
+    text-align: center; }
+    .pricing table td:first-child {
+      background: #f0f0f0;
+      font-weight: bold; }
+  .pricing table th {
+    color: #fff; }
+    .pricing table th:first-child {
+      background: #e42b15; }
+  .pricing table thead {
+    background: #ff3720; }
 
 /*# sourceMappingURL=style.css.map */
